@@ -4,23 +4,86 @@
   <meta charset="UTF-8">
   <title>Ramón Poo – Página personal</title>
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2em; }
-    h1, h2 { color: #003366; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    section { margin-bottom: 2em; }
+    body { 
+      font-family: sans-serif; 
+      max-width: 800px; 
+      margin: auto; 
+      padding: 2em; 
+      line-height: 1.6;
+    }
+    h1, h2 { 
+      color: #003366;
+    }
+    h3 {
+      color: #004080;
+    }
+    a { 
+      color: #0066cc; 
+      text-decoration: none;
+    }
+    a:hover { 
+      text-decoration: underline;
+    }
+    section { 
+      margin-bottom: 2.5em;
+    }
+    /* Nuevos estilos para mantener consistencia */
+    nav { 
+      background: #003366; 
+      padding: 1em; 
+      margin: -2em -2em 2em -2em; 
+      border-radius: 0;
+    }
+    nav a { 
+      color: white; 
+      margin-right: 1.5em; 
+      font-weight: bold;
+    }
+    .destacado { 
+      background: #f0f7ff; 
+      padding: 1.5em; 
+      border-radius: 8px; 
+      border-left: 4px solid #0066cc;
+    }
+    .boton { 
+      background: #0066cc; 
+      color: white; 
+      padding: 0.7em 1.5em; 
+      border-radius: 6px; 
+      display: inline-block; 
+      margin: 0.5em 0;
+      font-weight: bold; 
+      transition: background 0.3s;
+    }
+    .boton:hover { 
+      background: #004d99; 
+      text-decoration: none;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Menú de navegación añadido para consistencia -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="ClasesParticulares.html">Clases Particulares</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
   <h1>Ramón Poo Ramos</h1>
   <section>
     <p>Maestro en Ciencias Matemáticas por la UNAM (IMATE-CU), apasionado por la investigación en matemáticas aplicadas. Cuento con una sólida formación en análisis funcional y un profundo interés por las ecuaciones en derivadas parciales (EDPs) y sus aplicaciones, especialmente en física e ingeniería.</p>
-    <p><strong><a href="assets/cv.pdf">📄 Ver mi CV</a></strong></p>
+    <p><strong><a href="assets/cv.pdf" class="boton">📄 Ver mi CV</a></strong></p>
     <p>Contacto: ramonpoo400@gmail.com</p>
     <p>Redes: 
       <a href="https://www.linkedin.com/in/ramon-poo-ramos" target="_blank">LinkedIn</a> · 
-      <a href="https://www.instagram.com/ramon.poo/" target="_blank">Instagram</a>.
+      <a href="https://www.instagram.com/ramon.poo/" target="_blank">Instagram</a> ·
       <a href="https://gitlab.com/dashboard/projects/personal" target="_blank">GitLab</a>
     </p>
   </section>
@@ -46,7 +109,6 @@
     </ul>
   </section>
 
-
   <section>
     <h2>📝 Apuntes personales</h2>
     <h3>Apuntes del seminario de mecánica de medios continuos (2025)</h3>
@@ -62,7 +124,7 @@
       <li><a href="apuntes/ApuntesPersonalesEDPs/EquationDePoissonAuxLimitesDeNeumann.pdf">Problème de Poisson aux conditions au bord de Neumann </a></li>
       <li><a href="apuntes/ApuntesPersonalesEDPs/EquationDeShrodingerLineaire.pdf">Equation de Schrödinger linéaire</a></li>
     </ul>
-    <h3><a href="apuntes.html">Ver más apuntes y ejercicios.</a></h3>
+    <h3><a href="apuntes.html" class="boton">Ver más apuntes y ejercicios</a></h3>
   </section>
   
   <section>
@@ -72,13 +134,15 @@
     </ul>
   </section>
 
-  <section>
+  <section id="contacto">
     <h2>📣 Clases y talleres</h2>
+    <div class="destacado">
       <p>
         <strong>Ofrezco clases y talleres de matemáticas</strong>, con especialización en <strong>docencia infantil</strong> y experiencia impartiendo <strong>matemáticas en francés</strong> a niños del <strong>LFM (Liceo Franco Mexicano)</strong>.<br>
-        También propongo <strong>acompañamiento personalizado</strong> para <strong>adultos y jóvenes universitarios</strong>. Consulta mis disponibilidades:
+        También propongo <strong>acompañamiento personalizado</strong> para <strong>adultos y jóvenes universitarios</strong>.
       </p>
-    <h3><a href="ClasesParticulares.html">Consultar sección de clases particulares</a></h3>
+      <a href="ClasesParticulares.html" class="boton">Consultar sección de clases particulares</a>
+    </div>
   </section>
 
 </body>
