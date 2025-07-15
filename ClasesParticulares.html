@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <title>Ramón Poo – Matemáticas y Clases Online</title>
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2em; }
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2em; line-height: 1.6; }
     h1, h2 { color: #003366; }
+    h3 { color: #004080; }
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    section { margin-bottom: 2em; }
-    /* Nuevos estilos para el menú y secciones */
-    nav { background: #003366; padding: 1em; margin-bottom: 2em; border-radius: 5px; }
-    nav a { color: white; margin-right: 1em; font-weight: bold; }
-    .destacado { background: #f0f7ff; padding: 1em; border-radius: 5px; }
-    .boton { background: #0066cc; color: white; padding: 0.5em 1em; border-radius: 5px; display: inline-block; }
+    section { margin-bottom: 2.5em; }
+    /* Estilos mejorados */
+    nav { background: #003366; padding: 1em; margin: -2em -2em 2em -2em; border-radius: 0; }
+    nav a { color: white; margin-right: 1.5em; font-weight: bold; }
+    .destacado { background: #f0f7ff; padding: 1.5em; border-radius: 8px; border-left: 4px solid #0066cc; }
+    .boton { 
+      background: #0066cc; color: white; padding: 0.7em 1.5em; 
+      border-radius: 6px; display: inline-block; margin: 0.5em 0;
+      font-weight: bold; transition: background 0.3s;
+    }
+    .boton:hover { background: #004d99; text-decoration: none; }
+    iframe { border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
   </style>
 </head>
 <body>
@@ -28,14 +35,10 @@
   <h1>Ramón Poo Ramos</h1>
   <p>Maestro en Ciencias Matemáticas | Clases personalizadas en línea</p>
 
-  <!-- Sección Académica (existente) -->
-  <section id="academico">
-    <!-- Tu contenido actual aquí -->
-  </section>
-
-  <!-- Nueva sección de Clases -->
+  <!-- Sección de Clases -->
   <section id="clases">
     <h2>🎓 Clases de Matemáticas Online</h2>
+    
     <div class="destacado">
       <h3>¿Necesitas ayuda con matemáticas o física?</h3>
       <p>Ofrezco clases <strong>100% en línea</strong> para:</p>
@@ -44,35 +47,49 @@
         <li>🎓 <strong>Universitarios</strong>: Cálculo, EDPs, análisis funcional, métodos numéricos.</li>
         <li>👨‍👩‍👧‍👦 <strong>Regularización en verano</strong>: Especializado en alumnos del Liceo Franco Mexicano (clases en español/francés).</li>
       </ul>
-      <a href="#contacto" class="boton">¡Agenda una clase de prueba!</a>
     </div>
 
-    <h3>📅 Reserva tu clase</h3>
-    <!-- Inserta el widget de Calendly aquí -->
-    
-    <iframe 
-        src="https://calendar.google.com/calendar/embed?src=ramonpoo400@gmail.com.com&ctz=America%2FMexico_City" 
-        style="border: 0; width: 100%; height: 600px;" 
-        frameborder="0" 
-        scrolling="no">
-    </iframe>
-
-    <h3>✨ ¿Por qué mis clases?</h3>
+    <h3>✨ Beneficios de mis clases</h3>
     <ul>
-      <li>📊 <strong>Enfoque práctico</strong>: Ejercicios aplicados a tus necesidades.</li>
-      <li>🎥 <strong>Clases grabadas</strong>: Acceso a material después de cada sesión.</li>
-      <li>🌍 <strong>Flexibilidad horaria</strong>: Clases en fines de semana o por las tardes.</li>
+      <li>👨‍🏫 <strong>Sesiones personalizadas</strong> 1-a-1 adaptadas a tu nivel</li>
+      <li>📊 <strong>Enfoque práctico</strong>: Ejercicios aplicados a tus necesidades</li>
+      <li>🎥 <strong>Clases grabadas</strong>: Acceso al material después de cada sesión</li>
+      <li>🕒 <strong>Flexibilidad horaria</strong>: Mañanas, tardes o fines de semana</li>
     </ul>
+
+    <h3>📅 ¿Cómo agendar tu clase?</h3>
+    <div class="destacado">
+      <ol>
+        <li>Revisa mis horarios disponibles en el calendario</li>
+        <li>Elige el día y hora que prefieras</li>
+        <li>Contáctame para confirmar tu reservación</li>
+      </ol>
+      <a href="#contacto" class="boton">¡Quiero agendar mi clase!</a>
+    </div>
+
+    <h3>Consulta mi disponibilidad</h3>
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?src=ramonpoo400%40gmail.com&ctz=America%2FMexico_City" 
+      style="border: 0; width: 100%; height: 500px;" 
+      frameborder="0" 
+      scrolling="no">
+    </iframe>
+    <p><small>🔹 Después de elegir horario, contáctame para confirmar.</small></p>
   </section>
 
-  <!-- Sección de Contacto mejorada -->
+  <!-- Sección de Contacto -->
   <section id="contacto">
     <h2>📩 Contacto</h2>
-    <p>¿Dudas? Escríbeme a <strong>ramonpoo400@gmail.com</strong> o contáctame por:</p>
-    <p>
-      <a href="https://wa.me/5215512345678" class="boton">WhatsApp</a> <!-- Cambia el número -->
-      <a href="https://www.instagram.com/ramon.poo/" class="boton">Instagram</a>
-    </p>
+    <div class="destacado">
+      <p><strong>¿Listo para comenzar o tienes dudas?</strong></p>
+      <p>Escríbeme a <a href="mailto:ramonpoo400@gmail.com">ramonpoo400@gmail.com</a> o contáctame directamente:</p>
+      <p>
+        <a href="https://wa.me/5215512345678" class="boton">💬 WhatsApp</a>
+        <a href="https://www.instagram.com/ramon.poo/" class="boton">📸 Instagram</a>
+      </p>
+      <p>Horario de atención: Lunes a Viernes de 9:00 a 18:00 hrs</p>
+    </div>
   </section>
+
 </body>
 </html>
