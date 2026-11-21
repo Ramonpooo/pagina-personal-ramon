@@ -2,148 +2,108 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ramón Poo – Página personal</title>
-  <style>
-    body { 
-      font-family: sans-serif; 
-      max-width: 800px; 
-      margin: auto; 
-      padding: 2em; 
-      line-height: 1.6;
-    }
-    h1, h2 { 
-      color: #003366;
-    }
-    h3 {
-      color: #004080;
-    }
-    a { 
-      color: #0066cc; 
-      text-decoration: none;
-    }
-    a:hover { 
-      text-decoration: underline;
-    }
-    section { 
-      margin-bottom: 2.5em;
-    }
-    /* Nuevos estilos para mantener consistencia */
-    nav { 
-      background: #003366; 
-      padding: 1em; 
-      margin: -2em -2em 2em -2em; 
-      border-radius: 0;
-    }
-    nav a { 
-      color: white; 
-      margin-right: 1.5em; 
-      font-weight: bold;
-    }
-    .destacado { 
-      background: #f0f7ff; 
-      padding: 1.5em; 
-      border-radius: 8px; 
-      border-left: 4px solid #0066cc;
-    }
-    .boton { 
-      background: #0066cc; 
-      color: white; 
-      padding: 0.7em 1.5em; 
-      border-radius: 6px; 
-      display: inline-block; 
-      margin: 0.5em 0;
-      font-weight: bold; 
-      transition: background 0.3s;
-    }
-    .boton:hover { 
-      background: #004d99; 
-      text-decoration: none;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    li {
-      margin-bottom: 0.5em;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramón Poo Ramos – Matemáticas aplicadas</title>
+  <meta name="description" content="Página personal de Ramón Poo Ramos, Maestro en Ciencias Matemáticas (UNAM). Investigación en EDPs, análisis funcional y elementos finitos; apuntes, simulaciones y clases de matemáticas.">
+  <meta property="og:title" content="Ramón Poo Ramos – Matemáticas aplicadas">
+  <meta property="og:description" content="Investigación en EDPs y análisis funcional, apuntes, simulaciones numéricas y clases de matemáticas.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <!-- Menú de navegación añadido para consistencia -->
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="ClasesParticulares.html">Clases Particulares</a>
-    <a href="#contacto">Contacto</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="marca">Ramón Poo Ramos</a>
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="apuntes.html">Apuntes</a>
+      <a href="ClasesParticulares.html">Clases particulares</a>
+      <a href="#contacto">Contacto</a>
+    </div>
   </nav>
 
-  <h1>Ramón Poo Ramos</h1>
-  <section>
-    <p>Maestro en Ciencias Matemáticas por la UNAM (IMATE-CU), apasionado por la investigación en matemáticas aplicadas. Cuento con una sólida formación en análisis funcional y un profundo interés por las ecuaciones en derivadas parciales (EDPs) y sus aplicaciones, especialmente en física e ingeniería.</p>
-    <p><strong><a href="assets/cv.pdf" class="boton">📄 Ver mi CV</a></strong></p>
-    <p>Contacto: ramonpoo400@gmail.com</p>
-    <p>Redes: 
-      <a href="https://www.linkedin.com/in/ramon-poo-ramos" target="_blank">LinkedIn</a> · 
-      <a href="https://www.instagram.com/ramon.poo/" target="_blank">Instagram</a> ·
-      <a href="https://gitlab.com/dashboard/projects/personal" target="_blank">GitLab</a>
-    </p>
-  </section>
-
-  <section>
-    <h2>📚 Temas de interés</h2>
-    <ul>
-      <li>Ecuaciones diferenciales en derivadas parciales (EDPs)</li>
-      <li>Análisis funcional: Análisis espectral de operadores</li>
-      <li>Métodos variacionales en EDPs</li>
-      <li>Método de elementos finitos (MEF)</li>
-      <li>Mecanica de medios continuos</li>
-      <li>Mecánica de fluidos</li>
-      <li>Bifurcaciones y estabilidad</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📑 Investigación y proyectos</h2>
-    <ul>
-      <li><strong>Tesina de maestría:</strong> <em>Método de elementos finitos para el laplaciano logarítimico</em>. <a href="investigacion/tesina_maestria.pdf">[PDF]</a></li>
-      <li><strong>Tesis de licenciatura:</strong> <em>Análisis espectral de proceso de colas con múltiples servidores</em>. <a href="investigacion/tesis_licenciatura.pdf">[PDF]</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📝 Apuntes personales</h2>
-    <h3>Apuntes del seminario de mecánica de medios continuos (2025)</h3>
-    <ul>
-      <li><a href="apuntes/SeminarioMediosContinuos/sesion1_cinematica_medios_continuos.pdf">Sesión 1: Cinemática del medio continuo</a></li>
-      <li><a href="apuntes/SeminarioMediosContinuos/sesion2_deformaciones.pdf">Sesión 2: Deformaciones</a></li>
-      <li><a href="apuntes/SeminarioMediosContinuos/sesion3.pdf">Sesión 3 : Estrés</a></li>
-      <li><a href="apuntes/SeminarioMediosContinuos/ejercicios-soluciones.pdf">Ejercicios y soluciones</a></li>
-    </ul>
-    <h3>Notes personnelles EDPs</h3>
-      <ul>
-      <li><a href="apuntes/ApuntesPersonalesEDPs/ProblemeDePoissonConditionsDirichlet.pdf">Problème de Poisson aux conditions de Dirichlet au bord.</a></li>
-      <li><a href="apuntes/ApuntesPersonalesEDPs/EquationDePoissonAuxLimitesDeNeumann.pdf">Problème de Poisson aux conditions au bord de Neumann </a></li>
-      <li><a href="apuntes/ApuntesPersonalesEDPs/EquationDeShrodingerLineaire.pdf">Equation de Schrödinger linéaire</a></li>
-    </ul>
-    <h3><a href="apuntes.html" class="boton">Ver más apuntes y ejercicios</a></h3>
-  </section>
-  
-  <section>
-    <h2>💻 Simulaciones numéricas</h2>
-    <ul>
-      <li><a href="simulaciones/difusion.html">Difusión térmica en 2D con el MDF</a></li>
-    </ul>
-  </section>
-
-  <section id="contacto">
-    <h2>📣 Clases y talleres</h2>
-    <div class="destacado">
+  <main>
+    <section>
+      <h1>Ramón Poo Ramos</h1>
+      <p class="subtitulo">Maestro en Ciencias Matemáticas · UNAM (IMATE-CU)</p>
+      <p>Apasionado por la investigación en matemáticas aplicadas. Cuento con una sólida formación en análisis funcional y un profundo interés por las ecuaciones en derivadas parciales (EDPs) y sus aplicaciones, especialmente en física e ingeniería.</p>
       <p>
-        <strong>Ofrezco clases y talleres de matemáticas</strong>, con especialización en <strong>docencia infantil</strong> y experiencia impartiendo <strong>matemáticas en francés</strong> a niños del <strong>LFM (Liceo Franco Mexicano)</strong>.<br>
-        También propongo <strong>acompañamiento personalizado</strong> para <strong>adultos y jóvenes universitarios</strong>.
+        <a href="assets/cv.pdf" class="boton">📄 Ver mi CV</a>
+        <a href="#contacto" class="boton boton-secundario">Contacto</a>
       </p>
-      <a href="ClasesParticulares.html" class="boton">Consultar sección de clases particulares</a>
-    </div>
-  </section>
+    </section>
+
+    <section>
+      <h2>📚 Temas de interés</h2>
+      <ul>
+        <li>Ecuaciones diferenciales en derivadas parciales (EDPs)</li>
+        <li>Análisis funcional: análisis espectral de operadores</li>
+        <li>Métodos variacionales en EDPs</li>
+        <li>Método de elementos finitos (MEF)</li>
+        <li>Mecánica de medios continuos</li>
+        <li>Mecánica de fluidos</li>
+        <li>Bifurcaciones y estabilidad</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📑 Investigación y proyectos</h2>
+      <ul>
+        <li><strong>Tesina de maestría:</strong> <em>Método de elementos finitos para el laplaciano logarítmico</em>. <a href="investigacion/tesina_maestria.pdf">[PDF]</a></li>
+        <li><strong>Tesis de licenciatura:</strong> <em>Análisis espectral de proceso de colas con múltiples servidores</em>. <a href="investigacion/tesis_licenciatura.pdf">[PDF]</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📝 Apuntes personales</h2>
+      <h3>Seminario de mecánica de medios continuos (2025)</h3>
+      <ul class="lista-docs">
+        <li><a href="apuntes/SeminarioMediosContinuos/sesion1_cinematica_medios_continuos.pdf">Sesión 1: Cinemática del medio continuo</a></li>
+        <li><a href="apuntes/SeminarioMediosContinuos/sesion2_deformaciones.pdf">Sesión 2: Deformaciones</a></li>
+        <li><a href="apuntes/SeminarioMediosContinuos/ejercicios-soluciones.pdf">Ejercicios y soluciones</a></li>
+      </ul>
+      <h3>Notes personnelles EDPs</h3>
+      <ul class="lista-docs">
+        <li><a href="apuntes/ApuntesPersonalesEDPs/ProblemeDePoissonConditionsDirichlet.pdf">Problème de Poisson aux conditions de Dirichlet au bord</a></li>
+        <li><a href="apuntes/ApuntesPersonalesEDPs/EquationDePoissonAuxLimitesDeNeumann.pdf">Problème de Poisson aux conditions au bord de Neumann</a></li>
+        <li><a href="apuntes/ApuntesPersonalesEDPs/EquationDeShrodingerLineaire.pdf">Équation de Schrödinger linéaire</a></li>
+      </ul>
+      <p><a href="apuntes.html" class="boton">Ver más apuntes y ejercicios</a></p>
+    </section>
+
+    <section id="simulaciones">
+      <h2>💻 Simulaciones numéricas</h2>
+      <ul>
+        <li><a href="simulaciones/difusion.html">Difusión térmica en 2D con el método de diferencias finitas</a></li>
+      </ul>
+    </section>
+
+    <section id="clases">
+      <h2>📣 Clases y talleres</h2>
+      <div class="destacado">
+        <p>
+          <strong>Ofrezco clases y talleres de matemáticas</strong>, con especialización en <strong>docencia infantil</strong> y experiencia impartiendo <strong>matemáticas en francés</strong> a niños del <strong>LFM (Liceo Franco Mexicano)</strong>.
+          También propongo <strong>acompañamiento personalizado</strong> para <strong>adultos y jóvenes universitarios</strong>.
+        </p>
+        <a href="ClasesParticulares.html" class="boton">Consultar clases particulares</a>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>📩 Contacto</h2>
+      <p>Correo: <a href="mailto:ramonpoo400@gmail.com">ramonpoo400@gmail.com</a></p>
+      <ul class="enlaces">
+        <li><a href="https://www.linkedin.com/in/ramon-poo-ramos" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://gitlab.com/ramonpoo400" target="_blank" rel="noopener">GitLab</a></li>
+        <li><a href="https://www.instagram.com/ramon.poo/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    © 2026 Ramón Poo Ramos
+  </footer>
 
 </body>
 </html>
