@@ -1,0 +1,184 @@
+/* Estilos compartidos – Ramón Poo Ramos */
+
+:root {
+  --azul-oscuro: #003366;
+  --azul: #0059b3;
+  --azul-hover: #00478f;
+  --azul-claro: #f0f6fc;
+  --texto: #1f2933;
+  --texto-suave: #52606d;
+  --borde: #d9e2ec;
+  --fondo: #ffffff;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+/* ---------- Navegación ---------- */
+.nav {
+  background: var(--azul-oscuro);
+}
+.nav-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0.9em 1.25em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4em 1.5em;
+}
+.nav a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.85;
+}
+.nav a:hover,
+.nav a[aria-current="page"] {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.nav .marca {
+  font-family: var(--serif);
+  font-size: 1.1em;
+  opacity: 1;
+  margin-right: auto;
+}
+
+/* ---------- Contenido ---------- */
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2.5em 1.25em 3em;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  line-height: 1.25;
+}
+h1 {
+  color: var(--azul-oscuro);
+  font-size: 2.3rem;
+  margin: 0 0 0.2em;
+}
+h2 {
+  color: var(--azul-oscuro);
+  font-size: 1.55rem;
+  margin: 0 0 0.7em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--borde);
+}
+h3 {
+  color: var(--azul-oscuro);
+  font-size: 1.15rem;
+  margin: 1.4em 0 0.4em;
+}
+
+.subtitulo {
+  color: var(--texto-suave);
+  font-size: 1.1em;
+  margin-top: 0;
+}
+
+a { color: var(--azul); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+section { margin-bottom: 3em; }
+
+ul, ol { padding-left: 1.3em; }
+li { margin-bottom: 0.45em; }
+
+/* Listas de documentos sin viñetas */
+.lista-docs {
+  list-style: none;
+  padding-left: 0;
+}
+.lista-docs li {
+  padding: 0.35em 0;
+  border-bottom: 1px dashed var(--borde);
+  margin: 0;
+}
+.lista-docs li:last-child { border-bottom: 0; }
+
+/* ---------- Componentes ---------- */
+.destacado {
+  background: var(--azul-claro);
+  padding: 1.4em 1.5em;
+  border-radius: 8px;
+  border-left: 4px solid var(--azul);
+}
+.destacado > :first-child { margin-top: 0; }
+.destacado > :last-child { margin-bottom: 0; }
+
+.boton {
+  display: inline-block;
+  background: var(--azul);
+  color: #fff;
+  padding: 0.65em 1.4em;
+  margin: 0.4em 0.4em 0.4em 0;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.boton:hover {
+  background: var(--azul-hover);
+  text-decoration: none;
+}
+.boton-secundario {
+  background: transparent;
+  color: var(--azul);
+  border: 1.5px solid var(--azul);
+}
+.boton-secundario:hover {
+  background: var(--azul-claro);
+}
+
+.enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em 1.2em;
+  padding: 0;
+  list-style: none;
+}
+
+img { max-width: 100%; height: auto; }
+
+iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+small, .nota { color: var(--texto-suave); }
+
+/* ---------- Pie de página ---------- */
+.pie {
+  border-top: 1px solid var(--borde);
+  color: var(--texto-suave);
+  font-size: 0.9em;
+  text-align: center;
+  padding: 1.5em 1.25em 2.5em;
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 600px) {
+  body { font-size: 1rem; }
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.35rem; }
+  .nav .marca { width: 100%; }
+  .destacado { padding: 1.1em 1.1em; }
+}

@@ -2,35 +2,39 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Simulación de difusión térmica 1D</title>
-  <style>
-    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2em; }
-    h1 { color: #003366; }
-    img { max-width: 100%; border: 1px solid #ccc; margin-bottom: 1em; }
-    .button {
-      background-color: #0066cc;
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .button:hover {
-      background-color: #004c99;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Difusión térmica en 2D – Ramón Poo Ramos</title>
+  <meta name="description" content="Simulación de la ecuación del calor en 2D resuelta con el método de diferencias finitas.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
-  <h1>💨 Difusión térmica en 2D</h1>
-  <p>Esta animación muestra la evolución de la temperatura en una placa metálica usando el modelo de difusión térmica en 2D. Se resolvió numéricamente la ecuación del calor mediante el método de diferencias finitas.</p>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="marca">Ramón Poo Ramos</a>
+      <a href="../index.html">Inicio</a>
+      <a href="../apuntes.html">Apuntes</a>
+      <a href="../ClasesParticulares.html">Clases particulares</a>
+      <a href="../index.html#contacto">Contacto</a>
+    </div>
+  </nav>
 
-  <img src="gifs/difusion.gif" alt="Animación de difusión térmica en 1D">
+  <main>
+    <h1>💨 Difusión térmica en 2D</h1>
+    <p>Esta animación muestra la evolución de la temperatura en una placa metálica usando el modelo de difusión térmica en 2D. Se resolvió numéricamente la ecuación del calor mediante el método de diferencias finitas.</p>
 
-  <p>
-    <a class="button" href="https://gitlab.com/ramonpoo400/fdm" target="_blank">
-      Ver código en GitLab
-    </a>
-  </p>
+    <img src="gifs/difusion.gif" alt="Animación de la difusión térmica en una placa 2D">
+
+    <p>
+      <a class="boton" href="https://gitlab.com/ramonpoo400/fdm" target="_blank" rel="noopener">Ver código en GitLab</a>
+      <a class="boton boton-secundario" href="../index.html#simulaciones">← Volver</a>
+    </p>
+  </main>
+
+  <footer class="pie">
+    © 2026 Ramón Poo Ramos
+  </footer>
 
 </body>
 </html>
